@@ -108,7 +108,7 @@ script = session.create_script(
         return Process.enumerateRanges(prot);
       },
       readMemory: function (address, size) {
-        return Memory.readByteArray(ptr(address), size);
+        return ptr(address).readByteArray(size);
       }
     };
 
